@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+
+        .positions {
+            margin-top: 20px;
+        }
+
+        .position {
+            margin: 15px 0;
+            padding: 20px;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .position h3 {
+            margin: 0;
+            color: #343a40;
+        }
+
+        .candidate {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .candidate img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+
+        .candidate h4 {
+            margin: 0;
+            color: #495057;
+            flex-grow: 1;
+        }
+
+        .panel-name {
+            font-weight: bold;
+            color: #007bff;
+            margin-right: 5px;
+        }
+
+        .vote-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff5733;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .vote-button:hover {
+            background-color: #c70039;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Deogire College of Engineering and Studies, Aurangabad</h1>
+        <h2>Welcome, <span id="userName"></span>!</h2>
+        <h3>Vote for Your Candidates</h3>
+        
+        <div class="positions">
+            <div class="position">
+                <h3>President</h3>
+                <div class="candidate">
+                    <img src="https://via.placeholder.com/80/FF5733/FFFFFF?text=A" alt="Candidate A">
+                    <span class="panel-name">Class A:</span>
+                    <h4>Candidate A</h4>
+                    <button class="vote-button">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="https://via.placeholder.com/80/33FF57/FFFFFF?text=B" alt="Candidate B">
+                    <span class="panel-name">Class B:</span>
+                    <h4>Candidate B</h4>
+                    <button class="vote-button">Vote</button>
+                </div>
+            </div>
+            <div class="position">
+                <h3>Vice-President</h3>
+                <div class="candidate">
+                    <img src="https://via.placeholder.com/80/FF5733/FFFFFF?text=C" alt="Candidate C">
+                    <span class="panel-name">Class A:</span>
+                    <h4>Candidate C</h4>
+                    <button class="vote-button">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="https://via.placeholder.com/80/33FF57/FFFFFF?text=D" alt="Candidate D">
+                    <span class="panel-name">Class B:</span>
+                    <h4>Candidate D</h4>
+                    <button class="vote-button">Vote</button>
+                </div>
+            </div>
+            <div class="position">
+                <h3>Secretary</h3>
+                <div class="candidate">
+                    <img src="https://via.placeholder.com/80/FF5733/FFFFFF?text=E" alt="Candidate E">
+                    <span class="panel-name">Class A:</span>
+                    <h4>Candidate E</h4>
+                    <button class="vote-button">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="https://via.placeholder.com/80/33FF57/FFFFFF?text=F" alt="Candidate F">
+                    <span class="panel-name">Class B:</span>
+                    <h4>Candidate F</h4>
+                    <button class="vote-button">Vote</button>
+                </div>
+            </div>
+            <div class="position">
+                <h3>Sports Representative</h3>
+                <div class="candidate">
+                    <img src="https://via.placeholder.com/80/FF5733/FFFFFF?text=G" alt="Candidate G">
+                    <span class="panel-name">Class A:</span>
+                    <h4>Candidate G</h4>
+                    <button class="vote-button">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="https://via.placeholder.com/80/33FF57/FFFFFF?text=H" alt="Candidate H">
+                    <span class="panel-name">Class B:</span>
+                    <h4>Candidate H</h4>
+                    <button class="vote-button">Vote</button>
+                </div>
+            </div>
+            <div class="position">
+                <h3>Cultural Representative</h3>
+                <div class="candidate">
+                    <img src="https://via.placeholder.com/80/FF5733/FFFFFF?text=I" alt="Candidate I">
+                    <span class="panel-name">Class A:</span>
+                    <h4>Candidate I</h4>
+                    <button class="vote-button">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="https://via.placeholder.com/80/33FF57/FFFFFF?text=J" alt="Candidate J">
+                    <span class="panel-name">Class B:</span>
+                    <h4>Candidate J</h4>
+                    <button class="vote-button">Vote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the query parameters from the URL
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+
+        // Display the user's name on the page
+        document.getElementById('userName').textContent = name ? name : "Guest";
+    </script>
+</body>
+</html>

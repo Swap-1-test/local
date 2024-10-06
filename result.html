@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Results</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .positions {
+            margin-top: 20px;
+        }
+
+        .position {
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ecf0f1;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .position:hover {
+            transform: translateY(-5px);
+            background-color: #dfe6e9;
+        }
+
+        .position h3 {
+            margin: 0 0 15px;
+            color: #34495e;
+            font-size: 1.8em;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        .candidate {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .candidate:hover {
+            background-color: #f8f9fa;
+        }
+
+        .candidate h4 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 1.2em;
+            flex-grow: 1;
+        }
+
+        .vote-count {
+            font-weight: 600;
+            color: #007bff;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .position h3 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Voting Results</h1>
+        <div class="positions">
+            <div class="position">
+                <h3>President</h3>
+                <div class="candidate">
+                    <h4>Candidate A</h4>
+                    <span class="vote-count">Votes: 120</span>
+                </div>
+                <div class="candidate">
+                    <h4>Candidate B</h4>
+                    <span class="vote-count">Votes: 85</span>
+                </div>
+            </div>
+            <div class="position">
+                <h3>Vice-President</h3>
+                <div class="candidate">
+                    <h4>Candidate C</h4>
+                    <span class="vote-count">Votes: 100</span>
+                </div>
+                <div class="candidate">
+                    <h4>Candidate D</h4>
+                    <span class="vote-count">Votes: 90</span>
+                </div>
+            </div>
+            <div class="position">
+                <h3>Secretary</h3>
+                <div class="candidate">
+                    <h4>Candidate E</h4>
+                    <span class="vote-count">Votes: 95</span>
+                </div>
+                <div class="candidate">
+                    <h4>Candidate F</h4>
+                    <span class="vote-count">Votes: 75</span>
+                </div>
+            </div>
+            <div class="position">
+                <h3>Sports Representative</h3>
+                <div class="candidate">
+                    <h4>Candidate G</h4>
+                    <span class="vote-count">Votes: 110</span>
+                </div>
+                <div class="candidate">
+                    <h4>Candidate H</h4>
+                    <span class="vote-count">Votes: 80</span>
+                </div>
+            </div>
+            <div class="position">
+                <h3>Cultural Representative</h3>
+                <div class="candidate">
+                    <h4>Candidate I</h4>
+                    <span class="vote-count">Votes: 105</span>
+                </div>
+                <div class="candidate">
+                    <h4>Candidate J</h4>
+                    <span class="vote-count">Votes: 70</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

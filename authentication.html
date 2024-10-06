@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            padding: 10px;
+            width: 80%;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #0056b3;
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff5733;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #c70039;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Deogire College of Engineering and Studies, Aurangabad</h1>
+        <h2>Authentication</h2>
+        
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="prn" placeholder="Enter Your PRN No" required>
+        </div>
+        <button class="submit-button" onclick="authenticate()">Submit</button>
+    </div>
+
+    <script>
+        function authenticate() {
+            const name = document.getElementById('name').value;
+            const prn = document.getElementById('prn').value;
+
+            if (name && prn) {
+                // Redirect to the voting page with query parameters
+                window.location.href = `voting.html?name=${encodeURIComponent(name)}&prn=${encodeURIComponent(prn)}`;
+            } else {
+                alert("Please enter your name and PRN number.");
+            }
+        }
+    </script>
+</body>
+</html>
